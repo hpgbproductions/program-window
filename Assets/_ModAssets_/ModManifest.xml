@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModManifest buildID="190507e7-e864-42e0-b5fd-0cc05adbf0dc">
+  <Mod name="Program Window Display" author="hpgbproductions" versionMajor="1" versionMinor="0" loadPriority="1000" lastUpdated="2022-02-23T15:20:34.5766607Z" apiVersion="1.0.0.0" description="">
+    <Steam title="" visibility="Public" previewPath="" language="English" tags="">
+      <description></description>
+    </Steam>
+    <GameObjects>
+      <GameObject name="ProgramWindow" path="Assets/_ModAssets_/Parts/ProgramWindow.prefab" />
+      <GameObject name="ProgramWindowUnlit" path="Assets/_ModAssets_/Parts/ProgramWindowUnlit.prefab" />
+      <GameObject name="pwPersistent" path="Assets/_ModAssets_/pwPersistent.prefab" />
+    </GameObjects>
+    <Assets>
+      <Asset path="Assets/WindowTexture/pwMat.mat" />
+      <Asset path="Assets/WindowTexture/pwMatUnlit.mat" />
+      <Asset path="Assets/WindowTexture/unset.png" />
+    </Assets>
+    <MaterialShaderMap>
+      <Material name="pwMat" shader="Standard" />
+      <Material name="pwMatUnlit" shader="Unlit/Transparent" />
+    </MaterialShaderMap>
+    <Assemblies>
+      <Assembly name="ProgramWindowDisplay-Assembly-CSharp.dll" path="Assets/_ModAssets_/ProgramWindowDisplay-Assembly-CSharp.dll.bytes" isProjectAssembly="true" />
+    </Assemblies>
+    <Sections>
+      <SimplePlanesMod apiVersion="1.0.0.0">
+        <Maps />
+        <Levels />
+        <Parts>
+          <Part name="ProgramWindow" prefabPath="Assets/_ModAssets_/Parts/ProgramWindow.prefab" xmlPath="Assets/_ModAssets_/Parts/ProgramWindow.xml" />
+          <Part name="ProgramWindowUnlit" prefabPath="Assets/_ModAssets_/Parts/ProgramWindowUnlit.prefab" xmlPath="Assets/_ModAssets_/Parts/ProgramWindowUnlit.xml" />
+        </Parts>
+        <DesignerPlugins />
+        <MapPlugins />
+        <PersistentObjects>
+          <PersistentObject objectName="pwPersistent" />
+        </PersistentObjects>
+      </SimplePlanesMod>
+    </Sections>
+  </Mod>
+</ModManifest>
